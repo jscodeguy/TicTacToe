@@ -13,16 +13,43 @@ body {
 }
 
 #board {
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    display: flex;
+    width: 450px;
+    height: 450px;
+    border: 2px black;
+    display: grid;
     position: relative;
     top: 50px;
     right: -20%;
 }
-
-.tiles{
-    border:2px solid black ;
+/* attempted to use flexbox for the display, but ended up using grid because it was just easier */
+/* .row{
+    border:1px solid black ;
+    flex-flow: row wrap;
+    flex: 1 0 33%;
+    min-height: 33.33vh;
+    max-height: 33.33vh;
+    margin: 1px;
     
 }
+.column{
+    border:1px solid black ;
+    flex-flow: column wrap;
+    flex: 1 0 33%;
+    min-height: 33.33vh;
+    max-height: 33.33vh;
+    margin: 1px;
+} */
+
+.parent{
+    display: grid;
+    grid-template-columns:33% 33% 33% ;
+    grid-template-rows:33% 33% 33%;
+    gap:  5px;
+    background-color: brown;
+}
+ .tile{ 
+    
+    background-color: lightgrey;
+    
+    
+} 
