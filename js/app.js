@@ -1,7 +1,7 @@
 
 //this variable will be the reset button
 const resetButton = document.querySelector('#reset')
-//this variable will be the board and cells
+//this variable will be the board
 const board = document.querySelector('.parent')
 //these variables will house tiles and allow us to make our win condition and log which tiles have an x or o in them
 const tile1 = document.querySelector('#tile1')
@@ -18,81 +18,75 @@ const tile9 = document.querySelector('#tile9')
 
 // A user should be able to click on different squares to make a move.
     //this function will change the tile to an x or an o
-const changeTile1 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile1.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile2 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile2.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile3 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile3.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile4 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile4.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile5 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile5.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile6 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile6.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile7 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile7.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile8 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile8.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
-const changeTile9 = () => {
-// const markTile = document.createElement('h2')
-// markTile.classList.add('text')
-//     tile9.appendChild(markTile)
-//     markTile.innerText = 'X'
-console.log('this works like a charm')
-}
+    const changeTile1 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile1.appendChild(markTile)
+        let choice = 0
+        // if (choice === 0) {
 
-    //this function will be used to make the players move
-const move = () => {
-
-    //we need to add an event listener to select a tile
+        // }
+    }
     
-    //we need to mark the tile with an x or o
     
-
-
-}
-   
+    const changeTile2 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile2.appendChild(markTile)
+    }
+    
+    
+    const changeTile3 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile3.appendChild(markTile)
+    }
+    
+    
+    const changeTile4 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile4.appendChild(markTile)
+    }
+    
+    
+    const changeTile5 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile5.appendChild(markTile)
+    }
+    
+    
+    const changeTile6 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile6.appendChild(markTile)
+    }
+    
+    
+    const changeTile7 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile7.appendChild(markTile)
+    }
+    
+    
+    const changeTile8 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile8.appendChild(markTile)
+    }
+    
+    
+    const changeTile9 = () => {
+    const markTile = document.createElement('p')
+        markTile.innerText = 'X'
+        tile9.appendChild(markTile)
+    }
+    
+    
+    
+    
 // Every click will alternate between marking an X and O
 // Upon marking of an individual cell, use JavaScript to add an X or O to the cell, according to whose turn it is.
 // A cell should not be able to be replayed once marked.

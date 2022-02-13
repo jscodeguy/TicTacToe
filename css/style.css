@@ -44,12 +44,21 @@ body {
     display: grid;
     grid-template-columns:33% 33% 33% ;
     grid-template-rows:33% 33% 33%;
-    gap:  5px;
     background-color: brown;
+    
 }
- .square{ 
+.tileClass{
+    border: 1px solid black;
+}
+
+ /* .square{ 
     background-color: lightgrey;
 } 
 h2{
     font-size: 30px;
 }
+.text{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+} */
