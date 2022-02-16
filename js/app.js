@@ -38,219 +38,118 @@ let playerTurn ='X'
 //     }
 // }}
     const changeTile1 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile1.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile1.appendChild(markTile)
+        const markTile = document.getElementById('tile1') 
+    if (playerTurn ==='X' && markTile.innerText == '1') {
+           markTile.innerText = 'X'
             playerTurn = 'O'
             }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile1.appendChild(markO)
+            else if (playerTurn ==='O' && markTile.innerText == '1') {
+            markTile.innerText = 'O'
             playerTurn = 'X'
-    
             }
 }
     const changeTile2 = () => {
-    const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile2.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile2.appendChild(markTile)
-            playerTurn = 'O'
+        const markTile = document.getElementById('tile2') 
+        if (playerTurn ==='X' && markTile.innerText == '2') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '2') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
             }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile2.appendChild(markO)
-            playerTurn = 'X'
     
+    
+    const changeTile3 = () => { 
+        const markTile = document.getElementById('tile3') 
+        if (playerTurn ==='X' && markTile.innerText == '3') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '3') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
             }
-    // for(i=0; i<tileArray.length;i++) { 
-    //     tileArray[i].onclick = function () {
-    //     const markTile = document.createElement('p')
-    //     markTile.innerText = 'X'
-    //     tileArray[i].appendChild(markTile)
-
-    //     if (tileArray[i].firstChild){
-    //         tileArray[i].removeChild(tileArray[i].firstChild)
-    //     }
-        
-        
-    //     if (playerTurn ==='X' && playerTurn !== 'O') {
-    //         const markTile = document.createElement('p')
-    //             markTile.innerText = 'X'
-    //             tile2.appendChild(markTile)
-    //             playerTurn = 'O'
-    //             }
-    //             else {
-    //             markTile.innerText = 'O'
-    //             tile2.appendChild(markTile)
-    //             playerTurn = 'X'
-        
-    //             }
-    // }
-    // }
-    }
-    
-    
-    const changeTile3 = () => {
-    // const markTile = document.createElement('p')
-    //     markTile.innerText = 'X'
-    //     tile3.appendChild(markTile)
-    // for(i=0; i<tileArray.length;i++) { 
-    //     tileArray[i].onclick = function () {
-    //     const markTile = document.createElement('p')
-    //     markTile.innerText = 'X'
-    //     tileArray[i].appendChild(markTile)
-        
-        
-    const markTile = document.createElement('p')
-    markTile.innerText = 'X'
-    tile3.appendChild(markTile)
-if (playerTurn ==='X' && playerTurn !== 'O') {
-    //const markTile = document.createElement('p')
-       // markTile.innerText = 'X'
-        //tile3.appendChild(markTile)
-        playerTurn = 'O'
-        }
-        else {
-        const markO = document.createElement('p')
-        markO.innerText = 'O'
-        tile3.appendChild(markO)
-        playerTurn = 'X'
-
-        }
-}
-   // }
-   // }
-//}
-    
     
     const changeTile4 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile4.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile4.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile4.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile4') 
+        if (playerTurn ==='X' && markTile.innerText == '4') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '4') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
     
     
     const changeTile5 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile5.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile5.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile5.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile5') 
+        if (playerTurn ==='X' && markTile.innerText == '5') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '5') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
     
     
     const changeTile6 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile6.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile6.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile6.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile6') 
+        if (playerTurn ==='X' && markTile.innerText == '6') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '6') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
     
     
     const changeTile7 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile7.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile7.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile7.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile7') 
+        if (playerTurn ==='X' && markTile.innerText == '7') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '7') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
     
     
     const changeTile8 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile8.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile8.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile8.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile8') 
+        if (playerTurn ==='X' && markTile.innerText == '8') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '8') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
     
     
     const changeTile9 = () => {
-        const markTile = document.createElement('p')
-        markTile.innerText = 'X'
-        tile9.appendChild(markTile)
-    if (playerTurn ==='X' && playerTurn !== 'O') {
-        //const markTile = document.createElement('p')
-           // markTile.innerText = 'X'
-            //tile9.appendChild(markTile)
-            playerTurn = 'O'
-            }
-            else {
-            const markO = document.createElement('p')
-            markO.innerText = 'O'
-            tile9.appendChild(markO)
-            playerTurn = 'X'
-    
-            }
+        const markTile = document.getElementById('tile9') 
+        if (playerTurn ==='X' && markTile.innerText == '9') {
+               markTile.innerText = 'X'
+                playerTurn = 'O'
+                }
+                else if (playerTurn ==='O' && markTile.innerText == '9') {
+                markTile.innerText = 'O'
+                playerTurn = 'X'
+                }
     }
+    
     
     
     
