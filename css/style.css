@@ -45,12 +45,15 @@ body {
     grid-template-columns:33% 33% 33% ;
     grid-template-rows:33% 33% 33%;
     background-color: brown;
-    
 }
 .tileClass{
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
+}
+h2{
+    font-size: 15px;
+
 }
 
  /* .square{ 

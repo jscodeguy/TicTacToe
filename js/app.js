@@ -17,6 +17,7 @@ const tile9 = document.querySelector('#tile9')
 const tileArray =[tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8,tile9]
 let square = 0
 let playerTurn ='X'
+let gameEnd = false
 
 
 // A user should be able to click on different squares to make a move.
@@ -39,22 +40,22 @@ let playerTurn ='X'
 // }}
     const changeTile1 = () => {
         const markTile = document.getElementById('tile1') 
-    if (playerTurn ==='X' && markTile.innerText == '1') {
+    if (playerTurn ==='X' && markTile.innerText == '1' && gameEnd === false) {
            markTile.innerText = 'X'
             playerTurn = 'O'
             }
-            else if (playerTurn ==='O' && markTile.innerText == '1') {
+            else if (playerTurn ==='O' && markTile.innerText == '1' && gameEnd === false) {
             markTile.innerText = 'O'
             playerTurn = 'X'
             }
 }
     const changeTile2 = () => {
         const markTile = document.getElementById('tile2') 
-        if (playerTurn ==='X' && markTile.innerText == '2') {
+        if (playerTurn ==='X' && markTile.innerText == '2' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '2') {
+                else if (playerTurn ==='O' && markTile.innerText == '2' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -63,11 +64,11 @@ let playerTurn ='X'
     
     const changeTile3 = () => { 
         const markTile = document.getElementById('tile3') 
-        if (playerTurn ==='X' && markTile.innerText == '3') {
+        if (playerTurn ==='X' && markTile.innerText == '3' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '3') {
+                else if (playerTurn ==='O' && markTile.innerText == '3' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -75,11 +76,11 @@ let playerTurn ='X'
     
     const changeTile4 = () => {
         const markTile = document.getElementById('tile4') 
-        if (playerTurn ==='X' && markTile.innerText == '4') {
+        if (playerTurn ==='X' && markTile.innerText == '4' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '4') {
+                else if (playerTurn ==='O' && markTile.innerText == '4' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -88,11 +89,11 @@ let playerTurn ='X'
     
     const changeTile5 = () => {
         const markTile = document.getElementById('tile5') 
-        if (playerTurn ==='X' && markTile.innerText == '5') {
+        if (playerTurn ==='X' && markTile.innerText == '5' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '5') {
+                else if (playerTurn ==='O' && markTile.innerText == '5' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -101,11 +102,11 @@ let playerTurn ='X'
     
     const changeTile6 = () => {
         const markTile = document.getElementById('tile6') 
-        if (playerTurn ==='X' && markTile.innerText == '6') {
+        if (playerTurn ==='X' && markTile.innerText == '6' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '6') {
+                else if (playerTurn ==='O' && markTile.innerText == '6' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -114,11 +115,11 @@ let playerTurn ='X'
     
     const changeTile7 = () => {
         const markTile = document.getElementById('tile7') 
-        if (playerTurn ==='X' && markTile.innerText == '7') {
+        if (playerTurn ==='X' && markTile.innerText == '7' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '7') {
+                else if (playerTurn ==='O' && markTile.innerText == '7' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -127,11 +128,11 @@ let playerTurn ='X'
     
     const changeTile8 = () => {
         const markTile = document.getElementById('tile8') 
-        if (playerTurn ==='X' && markTile.innerText == '8') {
+        if (playerTurn ==='X' && markTile.innerText == '8' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '8') {
+                else if (playerTurn ==='O' && markTile.innerText == '8' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
@@ -140,16 +141,18 @@ let playerTurn ='X'
     
     const changeTile9 = () => {
         const markTile = document.getElementById('tile9') 
-        if (playerTurn ==='X' && markTile.innerText == '9') {
+        if (playerTurn ==='X' && markTile.innerText == '9' && gameEnd === false) {
                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
-                else if (playerTurn ==='O' && markTile.innerText == '9') {
+                else if (playerTurn ==='O' && markTile.innerText == '9' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
     }
     
+
+    // if (tileArray[0],[1],[2].innertext === 'X')
     
     
     
@@ -167,11 +170,18 @@ resetButton.addEventListener('click', reset)
 // Display a message to indicate which turn is about to be played.
     //this function will declare the winner in an alert
 const winMessage = () => {
-
+const winAlert = document.createElement('h2')
+resetButton.appendChild(winAlert)
+winAlert.innerText = `${playerTurn} has won the game!`
+console.log(winAlert)
+gameEnd = true
 }
+// if (gameEnd === true){
+
+// }
 //this event will add the event listeners required to change the tiles every time the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    tile1.addEventListener('click',changeTile1)
+    tile1.addEventListener('click',winMessage)
     tile2.addEventListener('click',changeTile2)
     tile3.addEventListener('click',changeTile3)
     tile4.addEventListener('click',changeTile4)
