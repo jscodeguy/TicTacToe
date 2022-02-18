@@ -31,138 +31,138 @@ playText.innerText= `The current turn is ${playerTurn}`
 //we need to have a function that will mark the tile with an x and an o
 
 
-// for(i=0; i<tileArray.length;i++) { 
-//     tileArray[i].onclick = function () {
-//     const markTile = document.createElement('p')
-//     markTile.innerText = 'X'
-//     tileArray[i].appendChild(markTile)
 
-//     if (tileArray[i].firstChild){
-//         tileArray[i].removeChild(tileArray[i].firstChild)
-//     }
-// }}
 
     const changeTile1 = () => {
-        const markTile = document.getElementById('tile1') 
-    if (playerTurn ==='X' && markTile.innerText == '1' && gameEnd === false) {
-           markTile.innerText = 'X'
-            playerTurn = 'O'
-            }
-            else if (playerTurn ==='O' && markTile.innerText == '1' && gameEnd === false) {
-            markTile.innerText = 'O'
-            playerTurn = 'X'
-            }
-            playText.innerText= `The current turn is ${playerTurn}`
-}
-    const changeTile2 = () => {
-        const markTile = document.getElementById('tile2') 
-        if (playerTurn ==='X' && markTile.innerText == '2' && gameEnd === false) {
-                markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '2' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-            }
+    if (playerTurn ==='X' && tile1.innerText == '1' && gameEnd === false) {
+        tile1.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile1.innerText == '1' && gameEnd === false) {
+        tile1.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
+    const changeTile2 = () => { 
+        if (playerTurn ==='X' && tile2.innerText == '2' && gameEnd === false) {
+        tile2.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile2.innerText == '2' && gameEnd === false) {
+        tile2.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
     const changeTile3 = () => { 
-        const markTile = document.getElementById('tile3') 
-        if (playerTurn ==='X' && markTile.innerText == '3' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '3' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-            }
+        if (playerTurn ==='X' && tile3.innerText == '3' && gameEnd === false) {
+        tile3.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile3.innerText == '3' && gameEnd === false) {
+        tile3.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     const changeTile4 = () => {
-        const markTile = document.getElementById('tile4') 
-        if (playerTurn ==='X' && markTile.innerText == '4' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '4' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+        if (playerTurn ==='X' && tile4.innerText == '4' && gameEnd === false) {
+        tile4.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile4.innerText == '4' && gameEnd === false) {
+        tile4.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
     const changeTile5 = () => {
-        const markTile = document.getElementById('tile5') 
-        if (playerTurn ==='X' && markTile.innerText == '5' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '5' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+        if (playerTurn ==='X' && tile5.innerText == '5' && gameEnd === false) {
+        tile5.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile5.innerText == '5' && gameEnd === false) {
+        tile5.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
-    const changeTile6 = () => {
-        const markTile = document.getElementById('tile6') 
-        if (playerTurn ==='X' && markTile.innerText == '6' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '6' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+    const changeTile6 = () => { 
+        if (playerTurn ==='X' && tile6.innerText == '6' && gameEnd === false) {
+        tile6.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile6.innerText == '6' && gameEnd === false) {
+        tile6.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
-    const changeTile7 = () => {
-        const markTile = document.getElementById('tile7') 
-        if (playerTurn ==='X' && markTile.innerText == '7' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '7' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+    const changeTile7 = () => { 
+        if (playerTurn ==='X' && tile7.innerText == '7' && gameEnd === false) {
+        tile7.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile7.innerText == '7' && gameEnd === false) {
+        tile7.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
     const changeTile8 = () => {
-        const markTile = document.getElementById('tile8') 
-        if (playerTurn ==='X' && markTile.innerText == '8' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '8' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+        if (playerTurn ==='X' && tile8.innerText == '8' && gameEnd === false) {
+        tile8.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile8.innerText == '8' && gameEnd === false) {
+         tile8.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
     
     const changeTile9 = () => {
-        const markTile = document.getElementById('tile9') 
-        if (playerTurn ==='X' && markTile.innerText == '9' && gameEnd === false) {
-               markTile.innerText = 'X'
-                playerTurn = 'O'
-                }
-                else if (playerTurn ==='O' && markTile.innerText == '9' && gameEnd === false) {
-                markTile.innerText = 'O'
-                playerTurn = 'X'
-                }
-                playText.innerText= `The current turn is ${playerTurn}`
-    }
+        if (playerTurn ==='X' && tile9.innerText == '9' && gameEnd === false) {
+        tile9.innerText = 'X'
+        playerTurn = 'O'
+        winCondition()
+        }
+        else if (playerTurn ==='O' && tile9.innerText == '9' && gameEnd === false) {
+        tile9.innerText = 'O'
+        playerTurn = 'X'
+        }
+        playText.innerText= `The current turn is ${playerTurn}`
+        winCondition()
+        }
     
 
 
@@ -179,19 +179,88 @@ playText.innerText= `The current turn is ${playerTurn}`
     //this function will reset the board
 const reset = () => {
     window.location.reload()
-}
-resetButton.addEventListener('click', reset)
+    }
 // Display a message to indicate which turn is about to be played.
     //this function will declare the winner in an alert
-const winMessage = () => {
-const winAlert = document.createElement('h2')
-resetButton.appendChild(winAlert)
-winAlert.innerText = `${playerTurn} has won the game!`
-console.log(winAlert)
-gameEnd = true
-//tile2.removeEventListener('click',changeTile2)
+const winMessageX = () => {
+    const winAlert = document.createElement('h2')
+    resetButton.appendChild(winAlert)
+    winAlert.innerText = 'X has won the game!'
+    console.log(winAlert)
+    gameEnd = true
 }
+const winMessageO = () => {
+    const winAlert = document.createElement('h2')
+    resetButton.appendChild(winAlert)
+    winAlert.innerText = 'O has won the game!'
+    console.log(winAlert)
+    gameEnd = true
+    }
 
+const winCondition = () => {
+    if ( tile1.innerText ==='X'  && tile2.innerText ==='X' && tile3.innerText ==='X' ) {
+        winMessageX() }
+    else if ( tile1.innerText ==='O'  && tile2.innerText ==='O' && tile3.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile4.innerText ==='X'  && tile5.innerText ==='X' && tile6.innerText ==='X' ) {
+        console.log('win condition X')
+        winMessageX()
+    }
+    else if ( tile4.innerText ==='O'  && tile5.innerText ==='O' && tile6.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile7.innerText ==='X'  && tile8.innerText ==='X' && tile9.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile7.innerText ==='O'  && tile8.innerText ==='O' && tile9.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile1.innerText ==='X'  && tile4.innerText ==='X' && tile7.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile1.innerText ==='O'  && tile4.innerText ==='O' && tile7.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile2.innerText ==='X'  && tile5.innerText ==='X' && tile8.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile2.innerText ==='O'  && tile5.innerText ==='O' && tile8.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile3.innerText ==='X'  && tile6.innerText ==='X' && tile9.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile3.innerText ==='O'  && tile6.innerText ==='O' && tile9.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile1.innerText ==='X'  && tile5.innerText ==='X' && tile9.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile1.innerText ==='O'  && tile5.innerText ==='O' && tile9.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    else if ( tile3.innerText ==='X'  && tile5.innerText ==='X' && tile7.innerText ==='X' ) {
+        console.log('win condition O')
+        winMessageX()
+    }
+    else if ( tile3.innerText ==='O'  && tile5.innerText ==='O' && tile7.innerText ==='O' ) {
+        console.log('win condition O')
+        winMessageO()
+    }
+    }
 //this event will add the event listeners required to change the tiles every time the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
     tile1.addEventListener('click',changeTile1)
@@ -203,7 +272,9 @@ document.addEventListener('DOMContentLoaded', () => {
     tile7.addEventListener('click',changeTile7)
     tile8.addEventListener('click',changeTile8)
     tile9.addEventListener('click',changeTile9)
-})
+    resetButton.addEventListener('click', reset)
+    })
+    
 
 // Detect draw conditions (ties/cat's game)
 // Detect winner: Stop game and declare the winner if one player ends up getting three in a row.
