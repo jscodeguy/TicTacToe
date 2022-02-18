@@ -2,6 +2,11 @@ h1 {
     text-align: center;
     color: firebrick;
 }
+#playerTurn {
+   text-align: center;
+   font-size: 30px;
+   color: rgb(240, 46, 198);
+}
 
 body {
     background-color: powderblue;

@@ -13,11 +13,14 @@ const tile6 = document.querySelector('#tile6')
 const tile7 = document.querySelector('#tile7')
 const tile8 = document.querySelector('#tile8')
 const tile9 = document.querySelector('#tile9')
+const playText = document.querySelector('#playerTurn')
 //this array will hold the values of my game board tiles
 const tileArray =[tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8,tile9]
 let square = 0
 let playerTurn ='X'
 let gameEnd = false
+playText.innerText= `The current turn is ${playerTurn}`
+
 
 
 // A user should be able to click on different squares to make a move.
@@ -38,6 +41,7 @@ let gameEnd = false
 //         tileArray[i].removeChild(tileArray[i].firstChild)
 //     }
 // }}
+
     const changeTile1 = () => {
         const markTile = document.getElementById('tile1') 
     if (playerTurn ==='X' && markTile.innerText == '1' && gameEnd === false) {
@@ -48,17 +52,19 @@ let gameEnd = false
             markTile.innerText = 'O'
             playerTurn = 'X'
             }
+            playText.innerText= `The current turn is ${playerTurn}`
 }
     const changeTile2 = () => {
         const markTile = document.getElementById('tile2') 
         if (playerTurn ==='X' && markTile.innerText == '2' && gameEnd === false) {
-               markTile.innerText = 'X'
+                markTile.innerText = 'X'
                 playerTurn = 'O'
                 }
                 else if (playerTurn ==='O' && markTile.innerText == '2' && gameEnd === false) {
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
             }
     
     
@@ -72,6 +78,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
             }
     
     const changeTile4 = () => {
@@ -84,6 +91,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
     
@@ -97,6 +105,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
     
@@ -110,6 +119,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
     
@@ -123,6 +133,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
     
@@ -136,6 +147,7 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
     
@@ -149,10 +161,12 @@ let gameEnd = false
                 markTile.innerText = 'O'
                 playerTurn = 'X'
                 }
+                playText.innerText= `The current turn is ${playerTurn}`
     }
     
 
-    // if (tileArray[0],[1],[2].innertext === 'X')
+
+    
     
     
     
@@ -175,13 +189,12 @@ resetButton.appendChild(winAlert)
 winAlert.innerText = `${playerTurn} has won the game!`
 console.log(winAlert)
 gameEnd = true
+//tile2.removeEventListener('click',changeTile2)
 }
-// if (gameEnd === true){
 
-// }
 //this event will add the event listeners required to change the tiles every time the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    tile1.addEventListener('click',winMessage)
+    tile1.addEventListener('click',changeTile1)
     tile2.addEventListener('click',changeTile2)
     tile3.addEventListener('click',changeTile3)
     tile4.addEventListener('click',changeTile4)
