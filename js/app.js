@@ -197,7 +197,15 @@ const winMessageO = () => {
     gameEnd = true
     }
 
+    const draw = () => {
+    const drawAlert = document.createElement('h2')
+    resetButton.appendChild(drawAlert)
+    drawAlert.innerText = 'Cat game!'
+    console.log(drawAlert)
+    gameEnd = true
+    }
 const winCondition = () => {
+    
     if ( tile1.innerText ==='X'  && tile2.innerText ==='X' && tile3.innerText ==='X' ) {
         winMessageX() }
     else if ( tile1.innerText ==='O'  && tile2.innerText ==='O' && tile3.innerText ==='O' ) {
@@ -260,7 +268,35 @@ const winCondition = () => {
         console.log('win condition O')
         winMessageO()
     }
-    }
+    // else if (  tile1.innerText === 'X' || tile1.innerText === 'O'
+    //         && tile2.innerText === 'X' || tile2.innerText === 'O'
+    //         && tile3.innerText === 'X' || tile3.innerText === 'O'
+    //         && tile4.innerText === 'X' || tile4.innerText === 'O'
+    //         && tile5.innerText === 'X' || tile5.innerText === 'O'
+    //         && tile6.innerText === 'X' || tile6.innerText === 'O'
+    //         && tile7.innerText === 'X' || tile7.innerText === 'O'
+    //         && tile8.innerText === 'X' || tile8.innerText === 'O'
+    //         && tile9.innerText === 'X' || tile9.innerText === 'O'){
+    //         resetButton.innerText = 'Cat game!'
+    //     }
+    // 
+    else if( tile1.innerText !== "" &&
+             tile2.innerText !== "" &&
+             tile3.innerText !== "" &&
+             tile4.innerText !== "" &&
+             tile5.innerText !== "" &&
+             tile6.innerText !== "" &&
+             tile7.innerText !== "" &&
+             tile8.innerText !== "" &&
+             tile9.innerText !== "") {
+             resetButton.innerText = 'Cat game!'
+}
+else {
+    console.log('game')
+}
+}   
+//}
+    
 //this event will add the event listeners required to change the tiles every time the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
     tile1.addEventListener('click',changeTile1)
