@@ -268,34 +268,19 @@ const winCondition = () => {
         console.log('win condition O')
         winMessageO()
     }
-    // else if (  tile1.innerText === 'X' || tile1.innerText === 'O'
-    //         && tile2.innerText === 'X' || tile2.innerText === 'O'
-    //         && tile3.innerText === 'X' || tile3.innerText === 'O'
-    //         && tile4.innerText === 'X' || tile4.innerText === 'O'
-    //         && tile5.innerText === 'X' || tile5.innerText === 'O'
-    //         && tile6.innerText === 'X' || tile6.innerText === 'O'
-    //         && tile7.innerText === 'X' || tile7.innerText === 'O'
-    //         && tile8.innerText === 'X' || tile8.innerText === 'O'
-    //         && tile9.innerText === 'X' || tile9.innerText === 'O'){
-    //         resetButton.innerText = 'Cat game!'
-    //     }
-    // 
-    else if( tile1.innerText !== "" &&
-             tile2.innerText !== "" &&
-             tile3.innerText !== "" &&
-             tile4.innerText !== "" &&
-             tile5.innerText !== "" &&
-             tile6.innerText !== "" &&
-             tile7.innerText !== "" &&
-             tile8.innerText !== "" &&
-             tile9.innerText !== "") {
+    else if( tile1.innerText !== "1" &&
+             tile2.innerText !== "2" &&
+             tile3.innerText !== "3" &&
+             tile4.innerText !== "4" &&
+             tile5.innerText !== "5" &&
+             tile6.innerText !== "6" &&
+             tile7.innerText !== "7" &&
+             tile8.innerText !== "8" &&
+             tile9.innerText !== "9") {
              resetButton.innerText = 'Cat game!'
 }
-else {
-    console.log('game')
-}
+
 }   
-//}
     
 //this event will add the event listeners required to change the tiles every time the document is loaded
 document.addEventListener('DOMContentLoaded', () => {
